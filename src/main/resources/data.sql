@@ -1,0 +1,19 @@
+INSERT INTO "transaction" ("customer_id","transaction_date","amount") VALUES  (1,'2023-01-02',100);
+INSERT INTO "transaction" ("customer_id","transaction_date","amount") VALUES  (2,'2022-12-02',100);
+INSERT INTO "transaction" ("customer_id","transaction_date","amount") VALUES  (1,'2022-11-02',110);
+INSERT INTO "transaction" ("customer_id","transaction_date","amount") VALUES  (3,'2022-12-02',100);
+INSERT INTO "transaction" ("customer_id","transaction_date","amount") VALUES  (3,'2021-02-12',120);
+INSERT INTO "transaction" ("customer_id","transaction_date","amount") VALUES  (4,'2022-02-02',10);
+INSERT INTO "transaction" ("customer_id","transaction_date","amount") VALUES  (1,'2022-01-02',103);
+INSERT INTO "transaction" ("customer_id","transaction_date","amount") VALUES  (5,'2022-12-02',50);
+INSERT INTO "transaction" ("customer_id","transaction_date","amount") VALUES  (9,'2022-01-02',100);
+
+INSERT INTO "user" ("customer_id","first_name","last_name") VALUES  (1,'Revanth','P');
+INSERT INTO "user" ("customer_id","first_name","last_name") VALUES  (2,'Rohith','P');
+INSERT INTO "user" ("customer_id","first_name","last_name") VALUES  (3,'John','R');
+INSERT INTO "user" ("customer_id","first_name","last_name") VALUES  (4,'Harsh','T');
+INSERT INTO "user" ("customer_id","first_name","last_name") VALUES  (5,'Michael','B');
+INSERT INTO "user" ("customer_id","first_name","last_name") VALUES  (6,'Antila','Hon');
+INSERT INTO "user" ("customer_id","first_name","last_name") VALUES  (7,'Karan','Johar');
+INSERT INTO "user" ("customer_id","first_name","last_name") VALUES  (8,'Tom','Brady');
+INSERT INTO "user" ("customer_id","first_name","last_name") VALUES  (10,'Steve','Rogers');

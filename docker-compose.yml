@@ -1,0 +1,24 @@
+version: '3'
+services:
+  flyway:
+    image: flyway/flyway
+    command: -configFiles=/flyway/conf/flyway.config -locations=filesystem:/flyway/sql -connectRetries=60 migrate
+    volumes:
+      -  ../src/main/resources/
+    depends_on:
+      - dbgl
+#  postgres:
+#    image: postgres:12.2
+    #restart: always
+    ports:
+      - "5432:5432"
+    environment:
+#      - POSTGRES_USER=example-username
+#      - POSTGRES_PASSWORD=pass
+#      - POSTGRES_DB=db-name
+      - FLYWAY_URL=jdbc:postgressql://dbgl:5432/assessment
+      - FLYWAY_USER=flyway
+      - FLYWAY_PASSWORD=flyway
+      - FLYWAY_SCHEMA=feneral_ledger
+      - FLYWAY_CONNECT_RETRIES=300
+      - FLYWAY_BASELINE_ON_MIGRATE=false
