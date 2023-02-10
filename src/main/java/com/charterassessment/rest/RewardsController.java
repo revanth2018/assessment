@@ -23,11 +23,12 @@ public class RewardsController {
     /**
      * Pass customer Id in order to get rewards for each customer
      *
-     * @param customerID
-     * @return
+     * @param customerID id for user.
      */
     @GetMapping(value = "getRewards", produces = {"application/json"})
     public RewardDetails getRewards(@RequestHeader("CustomerID") String customerID) {
+
+        LOG.info("Requesting for use's rewards");
 
         return transactionService.fetchRewardsByCustomerId(customerID);
 
